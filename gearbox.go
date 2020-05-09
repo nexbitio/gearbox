@@ -136,7 +136,7 @@ func (gb *gearbox) Start(address string) error {
 	if err != nil {
 		return err
 	}
-
+	fmt.Printf("Listening on %s", address)
 	return gb.httpServer.Serve(ln)
 }
 
