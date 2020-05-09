@@ -154,6 +154,7 @@ func (gb *gearbox) Stop() error {
 	if gb.httpServer == nil {
 		return nil
 	}
+	fmt.Printf("Service stopped")
 	return gb.httpServer.Shutdown()
 }
 
